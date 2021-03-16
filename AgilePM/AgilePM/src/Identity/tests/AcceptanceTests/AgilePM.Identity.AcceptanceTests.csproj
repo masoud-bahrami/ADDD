@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\src\AgilePM.Core.csproj" />
+    <ProjectReference Include="..\..\src\ApplicationService\Commands\AgilePM.Identity.ApplicationService.csproj" />
+    <ProjectReference Include="..\..\src\ApplicationService\Query\AgilePM.Identity.ApplicationService.Query.csproj" />
+    <ProjectReference Include="..\..\src\Domain\AgilePM.Identity.Domain.Services\AgilePM.Identity.Domain.Services.csproj" />
+    <ProjectReference Include="..\..\src\Domain\AgilePM.Identity.Domain\AgilePM.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Infrastructure\DataBase\AgilePM.Identity.DataBase.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\src\AgilePM.Core.csproj" />
+    <ProjectReference Include="..\AgilePM.Identity.Domain.Contracts\AgilePM.Identity.Domain.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Core\src\AgilePM.Core.csproj" />
+    <ProjectReference Include="..\..\Domain\AgilePM.Identity.Domain\AgilePM.Identity.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\DataBase\AgilePM.Identity.DataBase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+  </ItemGroup>
+
+</Project>
